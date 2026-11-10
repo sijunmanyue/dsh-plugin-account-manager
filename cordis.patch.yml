@@ -1,0 +1,9 @@
+# dsh-account-manager bundle patch.
+# The Client half is declared by package.json -> dsh.client.
+# `filePath` may be absolute, start with `~`, or be relative to DSH_HOME.
+# Leave it empty to use <DSH_HOME>/account-manager/accounts.json.
+- insert:
+    - id: dsh-account-manager
+      name: dsh-account-manager
+      config:
+        filePath: ''

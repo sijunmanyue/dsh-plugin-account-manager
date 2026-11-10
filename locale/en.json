@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Account Manager",
+    "description": "Manage company and personal system accounts in one JSON file, with environments, global search, per-system views, and plain-text passwords."
+  }
+}

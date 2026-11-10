@@ -1,0 +1,54 @@
+{
+  "name": "dsh-account-manager",
+  "version": "1.0.0",
+  "private": true,
+  "description": "DeepSeek Harness account manager: maintain company and personal system accounts in one local JSON file, with environment grouping, search, and per-system views.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-connection",
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "account-manager",
+    "credentials"
+  ],
+  "author": "JUN MA",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sijunmanyue/dsh-plugin-account-manager.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sijunmanyue/dsh-plugin-account-manager/issues"
+  },
+  "homepage": "https://github.com/sijunmanyue/dsh-plugin-account-manager#readme"
+}
